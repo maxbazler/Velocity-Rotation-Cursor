@@ -62,6 +62,13 @@ $(".link").on("mouseenter mouseleave", function() {
             ease: "power1.out",
         });
 
+        // Rotate cursor content
+        gsap.to(cursor, {
+            duration: 0.2,
+            rotation: angle,
+            ease: "power1.out",
+        });
+
         // Update previous mouse coordinates
         prevX = e.clientX;
     }
